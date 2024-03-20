@@ -1,0 +1,32 @@
+.flex {
+    display: flex;
+} 
+.justify-center{
+justify-content: center;    
+}
+
+.align-center{
+    align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+.ionicon{
+    height: 40px;
+    width: 40px;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.grid{
+    display: grid;
+}

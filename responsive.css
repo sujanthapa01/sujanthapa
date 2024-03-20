@@ -1,0 +1,525 @@
+/* ------------------------------------------------------------ */
+/* -------------------------mobiles---------------------------- */
+/* ----------------------------------------------------------- */
+
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+
+
+    .nav-buttons {
+        display: none;
+
+    }
+
+    .close-svg-button {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px 10px;
+        overflow-x: hidden;
+
+
+    }
+
+    .menu-svg-button,
+    .close-svg-button {
+        display: block;
+        z-index: 1000;
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+
+    }
+
+    .nav-buttons {
+    z-index: 999;
+        font-size: 34px;
+        display: block;
+        /* position: absolute; */
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #717171;
+        /* transform: translatex(100%); */
+        transition: 0.3s ease all;
+/
+    }
+
+
+    .nav-ul li {
+        gap: 20px;
+        transition: all ease 200ms;
+    }
+
+
+    
+    .nav-ul li:active {
+        color: rgb(255, 255, 255);
+
+    }
+
+    .navbar .profile-img-div {
+        z-index: 1;
+    }
+
+
+    .active .nav-buttons {
+       
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        /* z-index: ; */
+    }
+
+
+    .active .menu-svg-button,
+    .ionicon [name="close-outline"] {
+        display: none;
+    }
+
+    .active .close-svg-button,
+    .ionicon[name="menu-outline"] {
+        display: block;
+    }
+
+
+
+    .nav-buttons::after {
+    display: none;
+    }
+    
+
+
+    
+.navbar::after {
+
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 400px;
+    left: 130px;
+    rotate: 40deg;
+    border: 2px solid rgba(219, 52, 200, 0.5);
+    border-radius: 20%;
+    animation: bubbleGlow1 2s infinite alternate-reverse;
+}
+
+@keyframes bubbleGlow1 {
+    0% {
+        box-shadow: 0 0 5px rgba(219, 52, 200, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(219, 52, 200, 0.5);
+    }
+}
+
+
+
+
+/* spining pic removed */
+
+
+.shape {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; */
+    border-radius: 999%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -3;
+}
+
+/* animation removed */
+@keyframes morph {}
+@keyframes spin1 {}
+@-webkit-keyframes morph1 {}
+@-webkit-keyframes spin { }
+
+/* -------------------------------------- */
+
+
+
+
+/* bio container */
+.bio-container{
+    width: 80%;
+}
+
+.bio1{
+ font-size: 20px;
+}
+
+
+.link a svg:hover{
+    scale: 1;
+   
+   }
+
+/* ABOUT ME PAGE CSS */
+   .about-me-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 210px 1fr;
+    }
+
+
+    .section1{
+        overflow-x: scroll;
+        height: 600PX;
+        padding: 0px 10px 10px 10px;
+        margin: 30px 10PX;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: #adacac3f;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
+        }
+        
+
+        .about-me-container{
+         text-align: center;
+            height: 800px;
+           
+         }
+
+         .aboutme-H1{
+            margin-bottom:30px ;
+          padding-top: 10px;
+          padding-bottom: 5px;
+         }
+
+         .aboutme-header{
+       
+       
+    }
+
+
+    .aboutme-H1{
+        border: 1px solid rgb(255, 255, 255);
+     background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(173,172,172,1) 100%);
+     border-radius: 9px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* -------------------------tablets---------------------------- */
+/* ----------------------------------------------------------- */
+
+
+
+
+/* Media query for screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+
+    .nav-buttons {
+        display: none;
+z-index: 2;
+    }
+
+    .close-svg-button {
+        display: none;
+
+    }
+
+    .navbar {
+        padding: 10px 10px;
+        overflow-x: hidden;
+
+
+    }
+
+    .menu-svg-button,
+    .close-svg-button {
+        z-index: 4;
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+
+    }
+
+    .nav-buttons {
+
+        font-size: 24px;
+        display:block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        background: #717171;
+        /* transform: translatex(100%); */
+        transition: 0.3s ease all;
+
+    }
+
+
+    .nav-ul li {
+        font-size: 34px;
+        gap: 20px;
+        transition: all ease 200ms;
+    }
+
+
+    .nav-ul li:hover {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .nav-ul li:active {
+        color: rgb(255, 255, 255);
+
+    }
+
+    .navbar .profile-img-div {
+        z-index: 1;
+    }
+
+
+    .active .nav-buttons {
+        transform: translateX(0px);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+
+    .active .menu-svg-button,
+    .ionicon [name="close-outline"] {
+        display: none;
+    }
+
+    .active .close-svg-button,
+    .ionicon[name="menu-outline"] {
+        display: block;
+    }
+
+
+
+    .nav-buttons::after {
+    display: none;
+    }
+    
+
+
+    
+.navbar::after {
+
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 400px;
+    left: 13px;
+    rotate: 40deg;
+    border: 2px solid rgba(219, 52, 200, 0.5);
+    border-radius: 20%;
+    animation: bubbleGlow1 2s infinite alternate-reverse;
+}
+
+@keyframes bubbleGlow1 {
+    0% {
+        box-shadow: 0 0 5px rgba(219, 52, 200, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(219, 52, 200, 0.5);
+    }
+}
+
+
+
+@keyframes bubbleGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(52, 219, 52, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(52, 219, 52, 0.5);
+    }
+}
+
+
+.sujan::after {
+    filter: blur(3px);
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 200px;
+    left: 500px;
+    rotate: 40deg;
+    border: 2px solid rgba(52, 219, 52, 0.5);
+    border-radius: 20%;
+    animation: bubbleGlow2 2s infinite alternate-reverse;
+}
+
+@keyframes bubbleGlow2 {
+    0% {
+        box-shadow: 0 0 5px rgba(52, 219, 52, 0.5);
+
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(85, 52, 219, 0.5);
+    }
+}
+
+
+/* for bio container */
+.link a svg:hover{
+    scale: 1;
+   
+   }
+
+
+
+/* ABOUT ME PAGE RESPONSIVENESS CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* -------------------------tablets---------------------------- */
+/* ----------------------------------------------------------- */
+
+
+
+/* Media query for screens larger than or equal to 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+
+
+    .menu-svg-button,
+    .close-svg-button {
+        display: none;
+           }
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+
+ 
+    .menu-svg-button,
+    .close-svg-button {
+        display: block;
+    }
+
+    .close-svg-button {
+        display: none;
+        position: fixed;
+        right:10px;
+    }
+
+
+    .nav-ul {
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 100vh;
+    }
+
+    .nav-buttons {
+/* 
+        font-size: 34px; */
+        display: block;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: #717171;
+        transition: 0.3s;
+        opacity: 0;
+        pointer-events: none;
+        visibility: 0;
+    }
+
+
+    .nav-ul li {
+        font-size: 28px;
+        gap: 20px;
+        transition: all ease 200ms;
+    }
+
+    .navbar .profile-img-div {
+        z-index: 1;
+    }
+
+
+
+}
+
+
+/* for small mobiles bio responsive */
+@media (max-width: 446px) {
+
+    .bio-container{
+        width: 90%;
+    }
+    
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+    /* Your landscape tablet and small desktop styles here */
+
+}
