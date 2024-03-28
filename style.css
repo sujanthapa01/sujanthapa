@@ -54,7 +54,8 @@ body {
     overflow-x: hidden;
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
+    background-color: whitesmoke;
 }
 
 .navbar .profile-img-div img {
